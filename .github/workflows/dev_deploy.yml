@@ -1,9 +1,8 @@
-name: Build the theme and deploy
+name: Build the theme and  deploy
 on:
-  pull_request:
+  push:
     branches:
       - dev-deploy
-    types: [closed]
 defaults:
   run:
     working-directory: themes/my-theme
